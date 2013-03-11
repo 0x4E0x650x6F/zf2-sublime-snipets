@@ -1,0 +1,42 @@
+<snippet>
+	<content>
+<![CDATA[
+namespace ${1}\Form\Validators; 
+
+use Zend\InputFilter\Factory as InputFactory; 
+use Zend\InputFilter\InputFilter; 
+use Zend\InputFilter\InputFilterAwareInterface; 
+use Zend\InputFilter\InputFilterInterface; 
+
+class ${2}Validator implements InputFilterAwareInterface 
+
+{ 
+	protected \$inputFilter; 
+	
+	public function setInputFilter(InputFilterInterface \$inputFilter) 
+	{ 
+		throw new \Exception("Not used"); 
+	} 
+	
+	public function getInputFilter() 
+	{ 
+		if (!\$this->inputFilter) 
+		{ 
+			\$inputFilter = new InputFilter(); 
+			\$factory = new InputFactory(); 
+			
+			${3}
+			
+			\$this->inputFilter = \$inputFilter;   
+		}
+		
+		return \$this->inputFilter; 
+	} 
+}
+
+]]>
+</content>
+	<tabTrigger>zf2-valid</tabTrigger>
+	<description>Zend 2 Form Validator</description>
+	<scope>source.php</scope>
+</snippet>
