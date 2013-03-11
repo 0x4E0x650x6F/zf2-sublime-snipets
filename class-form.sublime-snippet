@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+namespace ${1}\Form; 
+
+use Zend\Form\Element; 
+use Zend\Form\Form; 
+
+class ${2} extends Form 
+
+{ 
+    public function __construct(\$name = null) 
+    { 
+        parent::__construct(${3}); 
+        
+        \$this->setAttribute('method', 'post'); 
+        
+    } 
+} 
+]]></content>
+	<tabTrigger>zf2-form</tabTrigger>
+	<scope>source.php</scope> 
+</snippet>
