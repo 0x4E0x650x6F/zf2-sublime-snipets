@@ -17,6 +17,7 @@ class ${2} extends Form
     } 
 } 
 ]]></content>
+<description>Zend 2 Form</description>
 	<tabTrigger>zf2-form</tabTrigger>
 	<scope>source.php</scope> 
 </snippet>

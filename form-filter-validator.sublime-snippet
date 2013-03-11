@@ -19,6 +19,7 @@
 					), 
 				))); 
 ]]></content>
+<description>Zend 2 Form text Input</description>
 	<tabTrigger>zf2-txtinput</tabTrigger>
 	<scope>source.php</scope>
 </snippet>
