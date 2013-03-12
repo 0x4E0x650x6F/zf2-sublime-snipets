@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+namespace ${1}\Controller;
+
+use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
+
+class ${2}Controller extends AbstractActionController
+{
+    
+}
+]]></content>
+	<description>Zend 2 Controller Class</description>
+	<tabTrigger>zf2-controller</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

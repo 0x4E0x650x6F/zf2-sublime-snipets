@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+	public function ${1}Action()
+    {
+        return new ViewModel();
+    }
+]]></content>
+	<description>Zend 2 Controller Action</description>
+	<tabTrigger>zf2-action</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
