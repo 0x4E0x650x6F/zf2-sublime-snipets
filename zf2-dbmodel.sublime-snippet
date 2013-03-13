@@ -11,9 +11,9 @@ use Zend\Db\Sql\TableIdentifier;
 
 class ${2} implements AdapterAwareInterface {
 
-	protected $tableId;
-	protected $adapter;
-	protected $tableGateway;
+	protected \$tableId;
+	protected \$adapter;
+	protected \$tableGateway;
 
 	public function __construct()
 	{

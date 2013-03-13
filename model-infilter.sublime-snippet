@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+$inputFilter->add($factory->createInput(array(
+		'name'     => ${1},
+		'required' => false,
+		'filters'  => array(
+			array('name' => 'Digits'),
+			),
+		)));
+]]></content>
+	<description>zf2-infilter</description>
+	<tabTrigger>hello</tabTrigger>
+	<scope>source.python</scope>
+</snippet>
