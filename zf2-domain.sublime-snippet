@@ -47,8 +47,6 @@ class ${2} implements InputFilterAwareInterface
          return \$this->inputFilter;
     }        
 
-    
-
 }
 
 ]]></content>

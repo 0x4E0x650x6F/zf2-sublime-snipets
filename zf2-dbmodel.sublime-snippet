@@ -1,0 +1,44 @@
+<snippet>
+	<content><![CDATA[
+namespace ${1}\Model;
+
+use Zend\Db\Adapter\Adapter;
+use Zend\Db\ResultSet\HydratingResultSet;
+use Zend\Db\TableGateway\TableGateway;
+use Zend\Db\Sql\Select;
+use Zend\Db\Adapter\AdapterAwareInterface;
+use Zend\Db\Sql\TableIdentifier;
+
+class ${2} implements AdapterAwareInterface {
+
+	protected $tableId;
+	protected $adapter;
+	protected $tableGateway;
+
+	public function __construct()
+	{
+	    \$this->tableId 		= new TableIdentifier(${3:tbname},${4:schema});
+	  
+	}
+
+	/**
+     * Set db adapter
+     *
+     * @param Adapter $adapter
+     * @return AdapterAwareInterface
+     */
+    public function setDbAdapter(Adapter \$adapter)
+    {
+        \$this->adapter = \$adapter;
+        \$rowObjectPrototype = new ${5}
+		\$resultSet = new HydratingResultSet(\$hydrator,\$rowObjectPrototype);
+
+        \$this->tableGateway = new TableGateway(\$this->tableId, \$this->adapter, null,\$resultSet);
+    }
+
+}
+]]></content>
+	<description>zend framework db model</description>
+	<tabTrigger>zf2-dbmodel</tabTrigger>
+	<scope>source.php</scope> 
+</snippet>
