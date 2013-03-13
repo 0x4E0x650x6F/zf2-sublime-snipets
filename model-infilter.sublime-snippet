@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-$inputFilter->add($factory->createInput(array(
+\$inputFilter->add(\$factory->createInput(array(
 		'name'     => ${1},
 		'required' => false,
 		'filters'  => array(
@@ -8,7 +8,7 @@ $inputFilter->add($factory->createInput(array(
 			),
 		)));
 ]]></content>
-	<description>zf2-infilter</description>
-	<tabTrigger>hello</tabTrigger>
-	<scope>source.python</scope>
+	<description>zend domain model numeric input filter</description>
+	<tabTrigger>zf2-infilter</tabTrigger>
+	<scope>source.php</scope>
 </snippet>
