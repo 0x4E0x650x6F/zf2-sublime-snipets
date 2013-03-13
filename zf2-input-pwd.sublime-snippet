@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+		$this->add(array( 
+            'name' => ${1}, 
+            'type' => 'password', 
+            'attributes' => array( 
+                'id' => ${2}, 
+                'placeholder' => ${3}, 
+                'required' => 'required', 
+            ), 
+            'options' => array( 
+                'label' => ${4},
+            ), 
+        )); 
+]]></content>
+	<description>Zend framework 2 password input</description>
+	<tabTrigger>zf2-inpwd</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

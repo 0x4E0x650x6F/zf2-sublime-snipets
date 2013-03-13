@@ -1,0 +1,17 @@
+<snippet>
+	<content>
+		<![CDATA[
+			$this->add(array(
+	            'name' =>  ${1},
+	            'attributes' => array(
+	                'type'  => ${2},
+	                'value' => ${3},
+	                'id' => ${4},
+	            ),
+	        ));
+		]]>
+	</content>
+	<tabTrigger>zf2-button</tabTrigger>
+	<description>Zf2 form button</description>
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,58 @@
+<snippet>
+	<content>
+<![CDATA[
+namespace ${1}\Model;
+
+use Zend\InputFilter\Factory as InputFactory;
+use Zend\InputFilter\InputFilter;
+use Zend\InputFilter\InputFilterAwareInterface;
+use Zend\InputFilter\InputFilterInterface;
+
+
+class ${2} implements InputFilterAwareInterface
+{
+
+	protected $inputFilter;
+
+    public function exchangeArray(\$data)
+    {
+        //your code goes here
+        ${3}
+    }
+
+    /**
+     *   [getArrayCopy description]
+     *   @return [type] [description]
+     */
+    public function getArrayCopy()
+    {
+        return get_object_vars(\$this);
+    }
+
+	public function setInputFilter(InputFilterInterface \$inputFilter)
+    {
+        throw new \Exception("Not used");
+    }
+
+    public function getInputFilter()
+    {
+        if (!\$this->inputFilter) {
+            \$inputFilter = new InputFilter();
+            \$factory     = new InputFactory();
+            
+            ${4}
+            
+            \$this->inputFilter = \$inputFilter;
+         }
+         return \$this->inputFilter;
+    }        
+
+    
+
+}
+
+]]></content>
+	<description>Zend framework 2 domain</description>
+	<tabTrigger>zf2-domain</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
