@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+<![CDATA[
+\$this->${1}  = (isset(\$data[${2}]))  ? \$data[${3}] : null;
+]]>
+	</content>
+	<description>domain model numeric propery</description>
+	<tabTrigger>zf2-tprop</tabTrigger> -->
+	<scope>source.php</scope> 
+</snippet>
